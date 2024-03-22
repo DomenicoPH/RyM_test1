@@ -1,0 +1,21 @@
+.superContainer{
+    background-color: var(--bg-dark-blue);
+}
+
+.container{
+    display: flex;
+    padding-top: 55px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: var(--bg-dark-blue);
+    height: calc(100vh - 55px);
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    width: 100%;
+}

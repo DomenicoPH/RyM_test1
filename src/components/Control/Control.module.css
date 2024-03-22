@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 0px solid rgba(255, 255, 255, 0.1);
+    min-width: 250px;
+    background-color: var(--bg-darker-blue);
+    overflow-y: auto;
+    font-family: 'rym';
+    overflow-x: hidden;
+    height: calc(100vh - 55px);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.logoContainer{
+    display: flex;
+}
+
+.logoImage{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0;
+    padding: 0;
+    animation: imageGlow 4s linear infinite, rotate 25s linear infinite;
+}
+
+.countLabel{
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    margin: 5px;
+    color: greenyellow;
+}
+
+.countNumber{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: greenyellow;
+    padding: 4px 25px;
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 15px 10px 15px 10px;
+    background-color: var(--bg-darker-blue);
+    animation: textGlow 4s linear infinite;
+}
+
+.boton{
+    background-color: yellowgreen;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px 10px 15px 10px;
+    margin: 4px 25px;
+    width: 80%;
+    font-family: 'archivo';
+    font-size: .8rem;
+    font-weight: bolder;
+    color: var(--bg-dark-blue);
+    letter-spacing: .2rem;
+}
+.boton:active{
+    animation: imageGlow 1s linear infinite;
+}
+.boton:hover{
+    box-shadow: 0px 2px 5px black;
+    background-color: greenyellow;
+}
+
+/*animaciones*/
+@keyframes textGlow{
+    0% {
+        text-shadow: 0px 0px 20px blueviolet;
+    }
+    50% {
+        text-shadow: 0px 0px 50px greenyellow;
+    }
+    100% {
+        text-shadow: 0px 0px 20px blueviolet;
+    }
+}
+@keyframes imageGlow{
+    0% {
+        filter: drop-shadow(0px 0px 10px blueviolet);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 30px greenyellow);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px blueviolet);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

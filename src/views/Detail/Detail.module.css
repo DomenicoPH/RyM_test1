@@ -1,0 +1,229 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-dark-blue);
+    /* background-image: url('../../assets/img/sc06.png');
+    background-position: center;
+    background-size: cover; */
+}
+.mainBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 100vh;
+}
+.topBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .leftBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rightBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 25px;
+        height: 80%;
+    }
+.bottomBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.image{
+    width: 300px;
+    border-radius: 500px;
+    outline: 1px solid transparent;
+    transition: scale .5s ease-in-out, outline .5s ease;
+    animation: glow 2s ease-in-out infinite, rotate 4s ease-in-out infinite;
+}
+    .image:hover{
+        scale: 150%;
+        outline: 5px solid var(--bg-dark-blue);
+    }
+
+.id{
+    font-family: 'rym';
+    font-size: 1rem;
+    letter-spacing: .5rem;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+    margin-bottom: 20px;
+    animation: colorSwap 2s linear infinite;
+}
+.name{
+    text-align: center;
+    font-family: 'rym';
+    font-size:2rem;
+    padding: 0px;
+    margin: 15px;
+    animation: colorSwap 2s linear infinite;
+}
+.characterInfo{
+    font-family: 'rym';
+    font-size: 2rem;
+    color: greenyellow;
+    padding: 0px;
+    margin: 5px;
+
+}
+.labelSpan{
+    color: blueviolet;
+}
+
+.episodesLabel{
+    font-family: 'rym';
+    font-size: 2rem;
+    color: blueviolet;
+    text-align: center;
+    letter-spacing: 1rem;
+   
+    margin: 0px;
+    padding: 25px;
+    width: 100%;
+    transition: text-shadow 1s ease, color 1s ease;
+}
+.episodesLabel:hover{
+    text-shadow: 0px 0px 100px yellow;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.ul{
+    max-height: 0px;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--bg-dark-blue);
+    border-radius: 10px;
+    border: 5px solid rgba(137, 43, 226, 0.2);
+    margin: 0px;
+    padding-bottom: 25px;
+    transition: box-shadow 1s, background-color 1s, max-height 1s;
+    transition: all .5s ease-in-out;
+}
+    .show{
+        opacity: 100%;
+        box-shadow: 0px 0px 200px blueviolet;
+        max-height: 120px;
+    }
+    .hide{
+        opacity: 0%;
+        position: relative;
+        margin-top: -50px;
+    }
+
+.li{
+    font-family: 'rym';
+    font-size: 1.5rem;
+    color: rgba(172, 255, 47, 0);
+    color: greenyellow;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 25px;
+    transition: color 1s;
+}
+
+/*scrollbars*/
+::-webkit-scrollbar {
+    border-radius: 100px;
+    width: 10px;
+    background-color: rgba(137, 43, 226, 0.2);
+}
+.ul::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 2px 20px 20px 2px;
+    background-color: rgba(137, 43, 226, 0);
+}
+.ul::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    height: 10px;
+}
+
+.controls{
+    display: flex;
+    margin-top: 30px;
+}
+.controlButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 10px;
+    font-family: 'rym';
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 300px;
+    opacity: 25%;
+    transition: box-shadow 1s ease-in, opacity .2s ease-in;
+}
+.controlButton:hover{
+    opacity: 100%;
+    box-shadow: 0px 0px 20px blueviolet;
+}
+
+/* Slider */
+::-webkit-scrollbar-thumb {
+    background-color: greenyellow;
+    border-radius: 5px;
+}
+
+
+/*animaciones*/
+@keyframes glow{
+    0% {
+        box-shadow: 0px 0px 20px blueviolet;
+    }
+    50% {
+        box-shadow: 0px 0px 50px greenyellow;
+    }
+    100% {
+        box-shadow: 0px 0px 20px blueviolet;
+    }
+}
+
+@keyframes colorSwap{
+    0%{
+        color: blueviolet;
+    }
+    50%{
+        color: greenyellow;
+    }
+    100%{
+        color: blueviolet;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-2.5deg);
+    }
+    50%{
+        transform: rotate(2.5deg);
+    }
+    100%{
+        transform: rotate(-2.5deg);
+    }
+}

@@ -1,0 +1,120 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: var(--bg-dark-blue);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    min-width: 100%;
+    background-image: url('../../assets/img/sc01.png');
+    background-position:center;
+    background-size: cover;
+    /* background-position-y: -650px; */
+    background-repeat: no-repeat;
+    animation: moveBackground 10s infinite alternate;
+}
+/*Background Animation*/
+@keyframes moveBackground {
+    0% {
+        background-position-y: 50%; /* Posición inicial */
+    }
+    100% {
+        background-position-y: 60%; /* Posición final */
+    }
+}
+.episodeHeaderTitle{
+    font-family: 'rym';
+    font-size: 5rem;
+    color: greenyellow;
+    text-shadow: 0px 0px 10px black;
+    animation: vibrateShadow 5s infinite alternate;
+}
+@keyframes vibrateShadow {
+    0% {
+        text-shadow: 0px 0px 10px yellow;
+    }
+    50% {
+        text-shadow: 0px 0px 10px black;
+    }
+    100% {
+        text-shadow: 0px 0px 10px blueviolet;
+    }
+}
+
+.episodeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+.episodeContainer:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.episodeContainer:hover .toggleCharacters{
+    text-shadow: 0px 0px 10px yellow;
+}
+
+.infoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'rym';
+    font-size: .8rem;
+    letter-spacing: .5rem;
+}
+
+.episodeTitle, .episodeId, .episodeDate, .episodeCode, .episodeIdNumber{
+    font-family: 'rym';
+    font-weight: lighter;
+    text-align: center;
+    color: yellowgreen;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    margin: 0;
+    padding: 12px;
+}
+.episodeTitle{
+    width: 720px;
+    font-size: 2rem;
+}
+.episodeIdNumber{
+    width: 50px;
+}
+.episodeId{
+    width: 100px;
+}
+.episodeDate{
+    width: 200px;
+}
+.episodeCode{
+    width: 100px;
+}
+
+.toggleCharacters{
+    color: yellowgreen;
+    transition: color .5s, text-shadow 1s;
+}
+.toggleCharacters:hover{
+    color: blueviolet;
+    text-shadow: 0px 0px 10px blueviolet !important;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 80vw;
+}

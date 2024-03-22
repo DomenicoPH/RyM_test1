@@ -1,0 +1,33 @@
+.navContainer{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-darker-blue);
+    z-index: 1;
+}
+
+.leftContainer{
+    display: flex;
+    padding: 0px 10px;
+}
+
+.rightContainer{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: 'rym';
+}
+.link:hover{
+    /* color: rgb(3, 160, 201);
+    text-shadow: 0px 0px 15px rgb(3, 160, 201); */
+    color: greenyellow;
+    text-shadow: 0px 0px 15px yellow;
+}
+.navLink{
+    padding: 0px 10px;
+}

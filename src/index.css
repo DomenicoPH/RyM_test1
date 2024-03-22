@@ -1,0 +1,17 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-dark-blue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+@font-face{
+    font-family: 'rym';
+    src: url('./assets/fonts/get_schwifty.ttf');
+}
+@font-face{
+    font-family: 'archivo';
+    src: url(./assets/fonts/Archivo-VariableFont_wdth_wght.ttf);
+}

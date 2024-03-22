@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+}
+.input{
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+    height: 40px;
+    width: 200px;
+    font-family: 'rym';
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: blueviolet;
+}
+.input:focus{
+    background-color: greenyellow;
+    outline: none;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    font-family: 'rym';
+    font-size: 1.2rem;
+}
+.boton{
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+    background-color: blueviolet;
+    height: 40px;
+    margin-top: 5px;
+    font-family: 'rym';
+    font-size: 1.4rem;
+    color: greenyellow;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Puede ser necesario para algunos navegadores */
+}

@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.form{
+
+}
+
+.inputArea{
+    display: flex;
+    align-items: center;
+    padding: 3px 0px;
+}
+.input:focus{
+    background-color: yellowgreen;
+}
+
+.label{
+    font-family: 'rym';
+    letter-spacing: .5rem;
+    width: 140px;
+}
+
+.input{
+    width: 100%;
+    background-color: yellowgreen;
+    border: none;
+}
+
+
+.submit{
+    height: 40px;
+    width: 100%;
+    font-family: 'rym';
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin: 5px 0px;
+    background-color: blueviolet;
+    color: yellowgreen;
+    border: none;
+}
+.submit:active, .submit:focus{
+    background-color: greenyellow;   
+}
+
+input:-webkit-autofill {
+    background-color: greenyellow;
+  }
