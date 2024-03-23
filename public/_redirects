@@ -3,7 +3,7 @@
 
 # Redirecciones para otras rutas específicas
 /home/*           /index.html   200
-/mycharacters/*   /index.html   200
+/mycharacters/*      /mycharacters/index.html   200
 /favorites/*      /index.html   200
 /episodes/*       /index.html   200
 /about/*          /index.html   200
