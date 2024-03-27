@@ -25,28 +25,6 @@ const Detail = ({allCharacters, allEpisodes}) => {
         return foundEpisode ? (<div>Episode {foundEpisode.id} - {foundEpisode.name}</div>) : ''
     };
 
-    const nextId = () => {
-        const currentId = allCharacters.findIndex(char => char.id == id)
-        const nextId = currentId + 1
-        if(nextId < allCharacters.length){
-            /* console.log(allCharacters[nextId].id) */
-            return allCharacters[nextId].id
-        } else {
-            return 826
-        }
-    };
-
-    const prevId = () => {
-        const currentId = allCharacters.findIndex(char => char.id == id)
-        const prevId = currentId - 1
-        if(prevId > 0){
-            /* console.log(allCharacters[prevId].id) */
-            return allCharacters[prevId].id
-        } else {
-            return 1
-        }
-    };
-
     const toggleEpisodes = () => {
         setShowEpisodes(!showEpisodes)
     };
